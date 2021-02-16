@@ -1,9 +1,29 @@
+import { useEffect, useState } from "react";
 import { Route } from "react-router-dom";
 import axios from "axios";
 import Nav from "./components/Nav";
 import './App.css';
+import { isCompositeComponent } from "react-dom/test-utils";
 
 function App() {
+
+  const [info, setInfo] = useState([])
+
+  useEffect(() => {
+    const getInfo = async () => {
+      const url = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/Dev-training`;
+      const config = {
+        headers: {
+          Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
+        }
+      };
+      const resp = await axios.get(url, config);
+      setInfo(resp.data.records)
+    };
+      getInfo();
+    }, []);
+
+
   return (
     <div className="App">
       <h1>Dev-Training</h1>
