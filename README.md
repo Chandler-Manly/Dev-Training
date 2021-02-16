@@ -20,6 +20,8 @@ https://drive.google.com/file/d/1s4qeD8BeqHMwORCbboDGVeGUVqqfASwh/view?usp=shari
 
 https://drive.google.com/file/d/1aLEGh4pnBRqWy_yyItkVQcgJbn_2hS4W/view?usp=sharing
 
+![Component Hierarchy](Dev-training components.jpg)
+
 
 ## API and Data Sample
 
