@@ -14,13 +14,14 @@ Iphone X 375x812
 Laptop with HiDPI screen 1440x900
 
 https://drive.google.com/file/d/1s4qeD8BeqHMwORCbboDGVeGUVqqfASwh/view?usp=sharing
+![Wire-Frames]()
 
 
 ## Component Hierarchy
 
 https://drive.google.com/file/d/1aLEGh4pnBRqWy_yyItkVQcgJbn_2hS4W/view?usp=sharing
 
-![Component Hierarchy](Dev-training components.jpg)
+![Component Hierarchy]()
 
 
 ## API and Data Sample
