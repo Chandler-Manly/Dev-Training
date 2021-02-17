@@ -3,6 +3,7 @@ import { Route } from "react-router-dom";
 import axios from "axios";
 import Nav from "./components/Nav";
 import Typeahead from "./components/Typeahead"
+import Header from "./components/Header"
 import './App.css';
 import "./components/Typeahead.css";
 
@@ -27,7 +28,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Welcome to the Dev-Dojo</h1>
+      <header>"I just want to build something."</header>
+      <h1>Welcome to the Dev-Dojo!</h1>
       <h3><em>A training ground for aspiring developers.</em></h3>
       <Nav />
       <Route exact path="/">
@@ -45,7 +47,7 @@ function App() {
       <Route path="/edit/:id">
       <h3>edit page</h3>
         </Route>
-
+<footer>Add git hub and linkedin icons here</footer>
     </div>
   );
 }
