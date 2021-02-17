@@ -1,0 +1,16 @@
+.typeahead {
+display: block;
+}
+
+.typeahead-results {
+position: absolute;
+top: 0;
+left: 0;
+box-sizing: border-box;
+border: 1px solid black;
+width: 153px; 
+}
+
+.typeahead-results p {
+/* hover effects can go here */
+}

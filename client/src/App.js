@@ -2,8 +2,9 @@ import { useEffect, useState } from "react";
 import { Route } from "react-router-dom";
 import axios from "axios";
 import Nav from "./components/Nav";
+import Typeahead from "./components/Typeahead"
 import './App.css';
-import { isCompositeComponent } from "react-dom/test-utils";
+import "./components/Typeahead.css";
 
 function App() {
 
@@ -26,7 +27,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Dev-Training</h1>
+      <h1>Welcome to the Dev-Dojo</h1>
+      <h3><em>A training ground for aspiring developers.</em></h3>
       <Nav />
       <Route exact path="/">
         <h3>Home</h3>
@@ -37,12 +39,12 @@ function App() {
       <Route path="/html">
         <h3>HTML Feed</h3>
       </Route>
-      <Route path="/css">
-        <h3>CSS Feed</h3>
+      <Route path="/search">
+      <Typeahead />
       </Route>
       <Route path="/edit/:id">
-        <h3>Form goes here</h3>
-      </Route>
+      <h3>edit page</h3>
+        </Route>
 
     </div>
   );
