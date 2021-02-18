@@ -17,10 +17,12 @@ function Comments(props) {
       <p>Author: {author}</p>
       <p>Topic: {topic}</p>
       <p>Comment: {comment}</p>
+      <div className="buttons">
       <button onClick={deleteComment}>Delete</button>
       <Link to={`/edit/${props.info.id}`}>
       <button>Edit</button>
-      </Link>
+        </Link>
+        </div>
 
     </div>
   );

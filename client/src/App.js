@@ -32,9 +32,11 @@ function App() {
         <em>A training ground for aspiring developers.</em>
       </h3>
       <Nav />
-      <Link to="/search">Type ahead time</Link>
       <Route exact path="/">
         <h3>Home</h3>
+      </Route>
+      <Route exact path="/show">
+        <h3>Show</h3>
       </Route>
       <Route exact path="/form">
         <Form infos={infos} setToggleFetch={setToggleFetch} />

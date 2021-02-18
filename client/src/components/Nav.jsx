@@ -8,6 +8,7 @@ function Nav() {
       <Link to="/">Home</Link>
       <Link to="/form">Form</Link>
       <Link to="/search">Search</Link>
+      <Link to="/show">Show</Link>
 
       <Link to="/resources"><div>Resources</div></Link>
       <Link to="/quiz"><div>START THE DEVELOPER QUIZ:<br></br> DISCOVER YOUR POTENTIAL.</div></Link>

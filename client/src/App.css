@@ -24,9 +24,14 @@ button {
   box-shadow: 0 9px #999;
 }
 
-button:hover {background-color:#3e8e41}
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+button:hover {background-color:#0f4e63}
 button:active{
-  background-color: #3e8e41;
+  background-color: #0f4e63;
   box-shadow: 0 5px #666;
   transform: translateY(4px)
 }
