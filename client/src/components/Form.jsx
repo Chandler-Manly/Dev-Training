@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useHistory, useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import { baseURL, config } from "../services";
-import { useHistory } from "react-router-dom";
 
 function Form(props) {
   const [author, setAuthor] = useState("");
@@ -10,6 +10,19 @@ function Form(props) {
   const [topic, setTopic] = useState("");
 
   const history = useHistory();
+  const params = useParams();
+
+  useEffect(() => {
+    if (props.infos.length > 0 && params.id) {
+      const foundComment = props.infos.find((rev) => params.id === rev.id);
+      if (foundComment) {
+        setAuthor(foundComment.fields.author)
+        setComment(foundComment.fields.comment)
+        setTopic(foundComment.fields.topic)
+        setConcept(foundComment.fields.concept);
+      }
+    }
+  }, [props.infos, params.id]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -19,6 +32,12 @@ function Form(props) {
       comment,
       topic,
     };
+    if (params.id) {
+      const commentURL = `${baseURL}/${params.id}`;
+      await axios.put(commentURL, {fields}, config)
+    } else {
+
+    }
     await axios.post(baseURL, { fields }, config);
     props.setToggleFetch((curr) => !curr);
     history.push("/resources");

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Route } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
 import axios from "axios";
 import Nav from "./components/Nav";
 import Typeahead from "./components/Typeahead";
@@ -32,27 +32,27 @@ function App() {
         <em>A training ground for aspiring developers.</em>
       </h3>
       <Nav />
+      <Link to="/search">Type ahead time</Link>
       <Route exact path="/">
         <h3>Home</h3>
       </Route>
       <Route exact path="/form">
-        <Form setToggleFetch={setToggleFetch} />
+        <Form infos={infos} setToggleFetch={setToggleFetch} />
         </Route>
       <Route path="/quiz">
         <h3>Take our quiz</h3>
       </Route>
       <Route path="/resources">
         <div className="resources">
-          {infos.map((info)=>(<Comments info={info} />)) }
+          {infos.map((info) => (<Comments key={info.id} info={info} setToggleFetch={setToggleFetch}/>)) }
         </div>
       </Route>
       <Route path="/search">
         {" "}
-        Search Here
-        <Typeahead />
+        <Typeahead infos={infos}/>
       </Route>
       <Route path="/edit/:id">
-        <h3>edit page</h3>
+        <Form infos={infos} setToggleFetch={setToggleFetch} />
       </Route>
       <footer>Add git hub and linkedin icons here</footer>
     </div>
