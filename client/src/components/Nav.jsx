@@ -1,12 +1,16 @@
 import { Link } from "react-router-dom";
+import Header from "./Header";
 
 function Nav() {
   return (
     <nav>
+      <Header className="logo" />
       <Link to="/">Home</Link>
-      <Link to="/html"><div>HTML</div></Link>
-      <Link to="/css"><div>CSS</div></Link>
-      <Link to="js"><div>JavaScript</div></Link>
+      <Link to="/form">Form</Link>
+      <Link to="/resources"><div>Resources</div></Link>
+      <Link to="/quiz"><div>START THE DEVELOPER QUIZ:<br></br> DISCOVER YOUR POTENTIAL.</div></Link>
+
+   
     </nav>
   )
 }

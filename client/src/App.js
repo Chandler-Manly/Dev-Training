@@ -2,52 +2,59 @@ import { useEffect, useState } from "react";
 import { Route } from "react-router-dom";
 import axios from "axios";
 import Nav from "./components/Nav";
-import Typeahead from "./components/Typeahead"
-import Header from "./components/Header"
-import './App.css';
+import Typeahead from "./components/Typeahead";
+import Comments from "./components/Comments";
+import Form from "./components/Form";
+import Header from "./components/Header";
+import { baseURL, config } from "./services";
+import "./App.css";
 import "./components/Typeahead.css";
 
-function App() {
 
-  const [info, setInfo] = useState([])
+function App() {
+  const [infos, setInfos] = useState([]);
+  const [toggleFetch, setToggleFetch] = useState(false);
 
   useEffect(() => {
-    const getInfo = async () => {
-      const url = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/Dev-training`;
-      const config = {
-        headers: {
-          Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
-        }
-      };
-      const resp = await axios.get(url, config);
-      setInfo(resp.data.records)
+    const getInfos = async () => {
+      const resp = await axios.get(baseURL, config);
+      setInfos(resp.data.records);
     };
-      getInfo();
-    }, []);
-
+    getInfos();
+  }, [toggleFetch]);
 
   return (
     <div className="App">
-      <header>"I just want to build something."</header>
-      <h1>Welcome to the Dev-Dojo!</h1>
-      <h3><em>A training ground for aspiring developers.</em></h3>
+      <h1>
+        Welcome to the <div className="Dev">Dev-Dojo!</div>
+      </h1>
+      <h3>
+        <em>A training ground for aspiring developers.</em>
+      </h3>
       <Nav />
       <Route exact path="/">
         <h3>Home</h3>
       </Route>
-      <Route path="/js">
-        <h3>JavaScript Feed</h3>
+      <Route exact path="/form">
+        <Form setToggleFetch={setToggleFetch} />
+        </Route>
+      <Route path="/quiz">
+        <h3>Take our quiz</h3>
       </Route>
-      <Route path="/html">
-        <h3>HTML Feed</h3>
+      <Route path="/resources">
+        <div className="resources">
+          {infos.map((info)=>(<Comments info={info} />)) }
+        </div>
       </Route>
       <Route path="/search">
-      <Typeahead />
+        {" "}
+        Search Here
+        <Typeahead />
       </Route>
       <Route path="/edit/:id">
-      <h3>edit page</h3>
-        </Route>
-<footer>Add git hub and linkedin icons here</footer>
+        <h3>edit page</h3>
+      </Route>
+      <footer>Add git hub and linkedin icons here</footer>
     </div>
   );
 }

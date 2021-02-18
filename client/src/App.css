@@ -1,6 +1,42 @@
-h1 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  background-image: image("https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1966&q=80");
+
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 250px;
+  height: 75px;
+  border: 1px solid black;
+  border-radius: 4px;
+  motion-rotation: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 500px;
+}
+button {
+  display: flex;
+  justify-content: center;
+  width: 180px;
+  box-shadow: 0 9px #999;
+}
+
+button:hover {background-color:#3e8e41}
+button:active{
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px)
+}
+
+.Dev {
+  color: #0f4e63;
+}
+
+h3 {
+  font-family: "Just Another Hand", cursive;
 }
 
 div {
@@ -8,9 +44,14 @@ div {
 }
 
 header {
-  background-color: linear-gradient(180deg, #3578e5, white);
+  font-family: "Just Another Hand", cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to top, #0f4e63 90%, whitesmoke 50%);
   opacity: 1;
-  
+  padding-bottom: 75px;
+  padding-top: 50px;
   color: black;
 }
 
@@ -19,9 +60,12 @@ footer {
   justify-content: center;
   flex-direction: row;
   align-items: baseline;
-  background-color:#3578e5;
+  background: #0f4e63;
+  position: fixed;
+  bottom: 0;
+  padding-top: 125px;
+  width: 100%;
 }
-
 
 Nav {
   display: flex;
@@ -31,31 +75,21 @@ Nav {
   justify-content: space-around;
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 375px) {
   Nav {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     justify-content: left;
     align-items: flex-start;
   }
 }
 
-
-header{
-  /* : "https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1066&q=80"; */
-}
-
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
@@ -68,18 +102,17 @@ header{
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+/* @keyframes logo {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
