@@ -4,7 +4,7 @@ import Header from "./Header";
 function Nav() {
   return (
     <nav>
-      <Header className="logo" />
+      <Header />
       <Link to="/">Home</Link>
       <Link to="/form">Form</Link>
       <Link to="/search">Search</Link>
