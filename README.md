@@ -1,7 +1,7 @@
 # Dev-Training
 
 - This web-app is deployed via Netlify.
-![Netlify](https://determined-hopper-0e021f.netlify.app/)
+- ![Netlify](https://determined-hopper-0e021f.netlify.app/)
 
 ## Project Description
 
@@ -14,15 +14,10 @@ Iphone X 375x812
 Laptop with HiDPI screen 1440x900
 
 https://drive.google.com/file/d/1s4qeD8BeqHMwORCbboDGVeGUVqqfASwh/view?usp=sharing
-![Wire-Frames]()
-
 
 ## Component Hierarchy
 
 https://drive.google.com/file/d/1aLEGh4pnBRqWy_yyItkVQcgJbn_2hS4W/view?usp=sharing
-
-![Component Hierarchy]()
-
 
 ## API and Data Sample
 
@@ -64,7 +59,6 @@ https://drive.google.com/file/d/1aLEGh4pnBRqWy_yyItkVQcgJbn_2hS4W/view?usp=shari
 }
 
 ```
-
 #### MVP 
 - Create links that navigate user to appropriate feed 
 - Render previous comments on respective page 
@@ -104,7 +98,6 @@ https://drive.google.com/file/d/1aLEGh4pnBRqWy_yyItkVQcgJbn_2hS4W/view?usp=shari
 ## SWOT Analysis
 
 ### Strengths:
-- Positive attitude and a fundamental knowledge of the concepts and how the pieces of the puzzle fit
 - Team Sapphire and the GA commnuity's resources: TA hours, issue tickets, and fellow Sapphires
 
 ### Weaknesses:
@@ -113,10 +106,7 @@ https://drive.google.com/file/d/1aLEGh4pnBRqWy_yyItkVQcgJbn_2hS4W/view?usp=shari
 
 ### Opportunities:
 - Gain more hands-on experience with ReactReact
-- Appreciate all of the insights (both small and large) that Sapphire has learned thus far and will continue to learn on the Dev path ahead
+
 
 ### Threats:
-- The following are competing priorities that will threatened my dev time but I think we can plan around these:
-- Behind on homework and still need to submit randoUser, Audobon, and Color Switcher (my average homework completion time is ~3 hours per)
-- A 1 hour each pair of Dr. Appointments 
-- A 3 hour board meeting 
+- User experience and design 
