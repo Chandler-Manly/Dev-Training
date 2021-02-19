@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="App">
       <h1>
-        Welcome to the <div className="Dev">Dev-Dojo!</div>
+        Welcome to the <div className="Dev">Developer's</div> Training Ground
       </h1>
       <h3>
         <em>A training ground for aspiring developers.</em>

@@ -1,10 +1,12 @@
 import React from "react";
-import Logo from "../Logo.png";
+// import Logo from "../Logo.png";
 
 const Header = () => {
-  return <img className="logo" src={Logo} alt="logo" />;
+  <div>
+    <h1>company logo goes here</h1>
+  </div>
+  // return <img className="logo" src={Logo} alt="logo" />;
 };
 
 
-console.log(Logo);
 export default Header;
