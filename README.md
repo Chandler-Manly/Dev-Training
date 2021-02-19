@@ -1,7 +1,7 @@
 # Dev-Training
 
-- This web-app will be deployed via Netlify.
-- Minimum of 20 commits.
+- This web-app is deployed via Netlify.
+![Netlify](https://determined-hopper-0e021f.netlify.app/)
 
 ## Project Description
 
