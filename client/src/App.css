@@ -29,15 +29,15 @@ button {
   justify-content: center;
 }
 
-button:hover {background-color:#0f4e63}
+button:hover {background-color:#0d50e5}
 button:active{
-  background-color: #0f4e63;
+  background-color: #0d50e5;
   box-shadow: 0 5px #666;
   transform: translateY(4px)
 }
 
 .Dev {
-  color: #0f4e63;
+  color: #0d50e5;
 }
 
 h3 {
@@ -53,7 +53,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to top, #0f4e63 90%, whitesmoke 50%);
+  background: linear-gradient(to top, #0d50e5 90%, whitesmoke 50%);
   opacity: 1;
   padding-bottom: 75px;
   padding-top: 50px;
@@ -65,7 +65,7 @@ footer {
   justify-content: center;
   flex-direction: row;
   align-items: baseline;
-  background: #0f4e63;
+  background: #0d50e5;
   position: fixed;
   bottom: 0;
   padding-top: 125px;
