@@ -10,9 +10,9 @@ import Form from "./components/Form";
 import Header from "./components/Header";
 import Footer from "./components/Footer"
 import Quiz from "./components/Quiz";
+import "./components/Typeahead.css";
 import "./App.css";
 import "./Quiz.css";
-import "./components/Typeahead.css";
 
 function App() {
   const [infos, setInfos] = useState([]);
@@ -36,10 +36,21 @@ function App() {
       </h3>
       <Header /> 
       <Nav />
-      <Route exact path="/"></Route>
+      <Route exact path="/">
       <div className="home">
         <h3>Home is wherever I am with you.</h3>
-      </div>
+        </div>
+      </Route>
+      <Route exact path="/algorithms">
+      <div className="algorithms">
+        <h3>Algorithms HERE</h3>
+        </div>
+      </Route>
+      <Route exact path="/data-structures">
+      <div className="data-structures">
+        <h3>Data-Structures HERE</h3>
+        </div>
+        </Route>
       <Route path="/quiz"> <Quiz /></Route>
       <div className="quiz">
       <Link to={`/quiz`}>
