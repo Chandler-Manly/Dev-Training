@@ -5,6 +5,7 @@ function Nav() {
     <nav>
       <Link to="/">Home</Link>
       <Link to="/form">Form</Link>
+      <Link to="/algorithm">Algorithm Gallery #TBD</Link>
       <Link to="/resources"><div>Live-Feed</div></Link>
       <Link to="/quiz"><div>Quiz</div></Link>
 

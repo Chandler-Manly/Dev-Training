@@ -14,57 +14,57 @@ function App() {
 			],
     },
     {
-			questionText: 'Update question here',
+			questionText: 'What is the relationship between client and server called?',
 			answerOptions: [
-				{ answerText: 'A', isCorrect: true },
-				{ answerText: 'B', isCorrect: false },
-				{ answerText: 'C', isCorrect: false },
-				{ answerText: 'D', isCorrect: false },
+				{ answerText: 'the request-response paradigm', isCorrect: true },
+				{ answerText: 'the michael jordan-scottie pippen connection', isCorrect: false },
+				{ answerText: 'cheeseburger in paradise', isCorrect: false },
+				{ answerText: 'brunch and bubbles', isCorrect: false },
 			],
     },
     {
-			questionText: 'Update question here',
+			questionText: 'in what filel can we find all necessary dependencies for a project?',
 			answerOptions: [
-				{ answerText: 'A', isCorrect: true },
-				{ answerText: 'B', isCorrect: false },
-				{ answerText: 'C', isCorrect: false },
-				{ answerText: 'D', isCorrect: false },
+				{ answerText: 'package.json', isCorrect: true },
+				{ answerText: 'index.html', isCorrect: false },
+				{ answerText: 'style.css', isCorrect: false },
+				{ answerText: 'app.js', isCorrect: false },
 			],
     },
     {
-			questionText: 'Update question here',
+			questionText: 'what command lets install new dpeendencies to a project',
 			answerOptions: [
-				{ answerText: 'A', isCorrect: true },
-				{ answerText: 'B', isCorrect: false },
-				{ answerText: 'C', isCorrect: false },
-				{ answerText: 'D', isCorrect: false },
+				{ answerText: 'npm install dependency', isCorrect: true },
+				{ answerText: 'npm run start', isCorrect: false },
+				{ answerText: 'git commit -m', isCorrect: false },
+				{ answerText: 'git push', isCorrect: false },
 			],
     },
     {
-			questionText: 'Update question here',
+			questionText: 'What is the special syntax that allows us to write HTML in JavaScript',
 			answerOptions: [
-				{ answerText: 'A', isCorrect: true },
-				{ answerText: 'B', isCorrect: false },
-				{ answerText: 'C', isCorrect: false },
-				{ answerText: 'D', isCorrect: false },
+				{ answerText: 'JSX', isCorrect: true },
+				{ answerText: 'JS', isCorrect: false },
+				{ answerText: 'Python', isCorrect: false },
+				{ answerText: 'CSS', isCorrect: false },
 			],
     },
     {
-			questionText: 'Update question here',
+			questionText: 'What are the keywords to import and export files in Node.js',
 			answerOptions: [
-				{ answerText: 'A', isCorrect: true },
-				{ answerText: 'B', isCorrect: false },
-				{ answerText: 'C', isCorrect: false },
-				{ answerText: 'D', isCorrect: false },
+				{ answerText: 'require /module.exports (commonJS) && import/export (modules)', isCorrect: true },
+				{ answerText: 'Burgers and hotdogs', isCorrect: false },
+				{ answerText: 'fries or potato wedges', isCorrect: false },
+				{ answerText: 'soda or pop', isCorrect: false },
 			],
     },
     {
-			questionText: 'Update question here',
+			questionText: 'What allows us to pass properties to components',
 			answerOptions: [
-				{ answerText: 'A', isCorrect: true },
-				{ answerText: 'B', isCorrect: false },
-				{ answerText: 'C', isCorrect: false },
-				{ answerText: 'D', isCorrect: false },
+				{ answerText: 'props', isCorrect: true },
+				{ answerText: 'daps', isCorrect: false },
+				{ answerText: 'fist-bumps', isCorrect: false },
+				{ answerText: 'peace sign', isCorrect: false },
 			],
 		},
 	];
@@ -91,7 +91,7 @@ function App() {
 		<div className='app'>
 			{showScore ? (
 				<div className='score-section'>
-					You scored {score} out of {questions.length}
+					You scored {score} out of {questions.length}! Keep training! The force is strong with you.
 				</div>
 			) : (
 				<>

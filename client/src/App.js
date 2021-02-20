@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Route } from "react-router-dom";
-import { baseURL, config } from "./services";
+import { baseURL, config, algoURL, algoConfig } from "./services";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import Nav from "./components/Nav";
@@ -10,6 +10,7 @@ import Form from "./components/Form";
 import Header from "./components/Header";
 import Footer from "./components/Footer"
 import Quiz from "./components/Quiz";
+import Algorithm from "./components/Algorithm";
 import "./components/Typeahead.css";
 import "./App.css";
 import "./Quiz.css";
@@ -17,6 +18,7 @@ import "./Quiz.css";
 function App() {
   const [infos, setInfos] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(false);
+  const [algos, setAlgos] = useState([])
 
   useEffect(() => {
     const getInfos = async () => {
@@ -26,8 +28,18 @@ function App() {
     getInfos();
   }, [toggleFetch]);
 
+
+  useEffect(() => {
+    const getAlgos = async () => {
+      const response = await axios.get(algoURL, algoConfig);
+      setAlgos(response.data.records);
+    };
+    getAlgos();
+  }, [toggleFetch]);
+
   return (
     <div className="App">
+
       <h1>
         Welcome to the <div className="Dev">Developer's</div> Training Ground
       </h1>
@@ -38,12 +50,22 @@ function App() {
       <Nav />
       <Route exact path="/">
       <div className="home">
-        <h3>Home is wherever I am with you.</h3>
+          <h3>About us</h3>
+          <p>We are thrilled to provide an environment for developers from all backgrounds to get the necessary repetitions to level up from beginner to expert level. Whether you are looking to get some extra practice with our quiz feature or simply vent some debugging frustration on our "Live-Feed" the Developer's Training Ground is here for you. A Manly Technologies Company.</p>
         </div>
       </Route>
-      <Route exact path="/algorithms">
+      <Route exact path="/algorithm">
       <div className="algorithms">
-        <h3>Algorithms HERE</h3>
+        <h3>Algorithms HERE thumbnail of graphical representation and then hover effect that shows definition/concept </h3>
+        </div>
+        <div className="algos">
+          {algos.map((algo) => (
+            <Algorithm
+              key={algo.id}
+              algo={algo}
+              setToggleFetch={setToggleFetch}
+            />
+          ))}
         </div>
       </Route>
       <Route exact path="/data-structures">
@@ -51,12 +73,13 @@ function App() {
         <h3>Data-Structures HERE</h3>
         </div>
         </Route>
-      <Route path="/quiz"> <Quiz /></Route>
+      <Route path="/quiz"> <Quiz />
       <div className="quiz">
       <Link to={`/quiz`}>
       <button className="quiz-button" type="submit">Do you have what it takes to be on Team Sapphire:Take our quiz and discover your potential.</button>
         </Link>
-      </div>
+        </div>
+        </Route>
 
       <Route exact path="/form">
         <Form infos={infos} setToggleFetch={setToggleFetch} />
