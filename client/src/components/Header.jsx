@@ -3,8 +3,8 @@ import React from "react";
 
 const Header = () => {
   return(
-  <div>
-    <h1>Company Logo</h1>
+  <div className="company-logo">
+      <img src="Logo.png"></img>
   </div>)
 };
 
