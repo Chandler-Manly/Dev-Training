@@ -1,6 +1,19 @@
-img {
-  width: 250px;
-  height: 250px;
+.algo-thumbnails {
+  display: flex;
+  flex-direction: row;
+  opacity: 1;
+}
+.algo-thumbnails > img {
+  opacity: .65;
+}
+.algo-thumbnails:hover > img:hover {
+  transition-duration: .8s;
+  opacity: 1;
+}
+
+.photos {
+  width: 400px; 
+  height: 400px;
 }
 
 /* CSS: Z-INDEX background image */

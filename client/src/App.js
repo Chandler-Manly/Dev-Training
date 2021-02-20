@@ -13,7 +13,6 @@ import Quiz from "./components/Quiz";
 import Algorithm from "./components/Algorithm";
 import "./components/Typeahead.css";
 import "./App.css";
-import "./Quiz.css";
 
 function App() {
   const [infos, setInfos] = useState([]);
@@ -39,21 +38,16 @@ function App() {
 
   return (
     <div className="App">
-
-      <h1>
-        Welcome to the <div className="Dev">Developer's</div> Training Ground
-      </h1>
-      <h3>
-        <em>A training ground for aspiring developers.</em>
-      </h3>
       <Header /> 
       <Nav />
+
       <Route exact path="/">
       <div className="home">
           <h3>About us</h3>
           <p>We are thrilled to provide an environment for developers from all backgrounds to get the necessary repetitions to level up from beginner to expert level. Whether you are looking to get some extra practice with our quiz feature or simply vent some debugging frustration on our "Live-Feed" the Developer's Training Ground is here for you. A Manly Technologies Company.</p>
         </div>
       </Route>
+
       <Route exact path="/algorithm">
         <div className="algos">
           {algos.map((algo) => (
@@ -65,11 +59,13 @@ function App() {
           ))}
         </div>
       </Route>
+
       <Route exact path="/data-structures">
       <div className="data-structures">
         <h3>Data-Structures HERE</h3>
         </div>
-        </Route>
+      </Route>
+      
       <Route path="/quiz"> <Quiz />
       <div className="quiz">
       <Link to={`/quiz`}>
@@ -94,8 +90,10 @@ function App() {
           ))}
         </div>
       </Route>
+
       <Route path="/edit/:id">
         <Form infos={infos} setToggleFetch={setToggleFetch} />
+        
       </Route>
       <Footer />
     </div>

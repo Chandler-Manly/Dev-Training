@@ -1,6 +1,6 @@
 // Source: https://github.com/chrisblakely01/quiz-app/blob/master/final/src/App.js
-import { Link } from "react-router-dom";
 import React, { useState } from 'react';
+import "./Quiz.css"
 
 function App() {
 	const questions = [

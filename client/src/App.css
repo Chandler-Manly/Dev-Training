@@ -1,3 +1,7 @@
+.app {
+  display: flex;
+}
+
 header {
   display: flex;
   align-content: flex-start;
@@ -6,11 +10,6 @@ header {
   padding-bottom: 75px;
   padding-top: 50px;
   color: black;
-}
-
-.company-logo {
-  width: 200px;
-  height: 100px;
 }
 
 .quiz-button {
@@ -25,17 +24,6 @@ header {
 }
 
 /* transition-duration: 1second to smooth transitioning from link to link */
-
-.logo {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 250px;
-  height: 75px;
-  border: 1px solid black;
-  border-radius: 4px;
-  motion-rotation: auto;
-}
 
 .fa {
   padding: 20px;

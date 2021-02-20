@@ -16,9 +16,9 @@ function Form(props) {
     if (props.infos.length > 0 && params.id) {
       const foundComment = props.infos.find((rev) => params.id === rev.id);
       if (foundComment) {
-        setAuthor(foundComment.fields.author)
-        setComment(foundComment.fields.comment)
-        setTopic(foundComment.fields.topic)
+        setAuthor(foundComment.fields.author);
+        setComment(foundComment.fields.comment);
+        setTopic(foundComment.fields.topic);
         setConcept(foundComment.fields.concept);
       }
     }
@@ -34,16 +34,13 @@ function Form(props) {
     };
     if (params.id) {
       const commentURL = `${baseURL}/${params.id}`;
-      await axios.put(commentURL, {fields}, config)
+      await axios.put(commentURL, { fields }, config);
     } else {
-
     }
     await axios.post(baseURL, { fields }, config);
     props.setToggleFetch((curr) => !curr);
     history.push("/resources");
   };
-
-
 
   return (
     <form onSubmit={handleSubmit}>
@@ -52,17 +49,23 @@ function Form(props) {
         id="concept"
         value={concept}
         type="text"
-        onChange={(e) =>setConcept(e.target.value)} />
+        onChange={(e) => setConcept(e.target.value)}
+      />
       <label htmlFor="author">Author: </label>
       <input
         id="author"
         value={author}
         type="text"
-        onChange={(e) => setAuthor(e.target.value)} />
+        onChange={(e) => setAuthor(e.target.value)}
+      />
       <label htmlFor="topic">Topic: </label>
-      <select className="topics" id="topics" >
-        <option value="Placeholder" placeholder="Topic Drop down menu">General</option>
-        <option value="HTML" placeholder="Topic Drop down menu">HTML</option>
+      <select className="topics" id="topics">
+        <option value="Placeholder" placeholder="Topic Drop down menu">
+          General
+        </option>
+        <option value="HTML" placeholder="Topic Drop down menu">
+          HTML
+        </option>
         <option value="CSS">CSS</option>
         <option value="Javascript Vanilla">Javascript Vanilla</option>
         <option value="React">React</option>
@@ -73,10 +76,13 @@ function Form(props) {
         id="comment"
         value={comment}
         type="text"
-        onChange={(e) => setComment(e.target.value)} />
-      <button id="submit" type="submit">Submit Me!</button>
+        onChange={(e) => setComment(e.target.value)}
+      />
+      <button id="submit" type="submit">
+        Submit Me!
+      </button>
     </form>
-  )
+  );
 }
 
 export default Form;
