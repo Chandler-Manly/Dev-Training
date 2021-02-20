@@ -7,6 +7,7 @@ const Typeahead = (props) => {
   
   return (
     <div className="typeahead">
+      <label>Search:</label>
       <input type="text" value={concept} onChange={(e) => setConcept(e.target.value)} />
       <div className="typeahead-results">
         {concept && filteredInfos.map((info) => (

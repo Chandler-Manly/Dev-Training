@@ -4,9 +4,8 @@ import React from "react";
 const Header = () => {
   return(
   <div>
-    <h1>company logo goes here</h1>
+    <h1>Company Logo</h1>
   </div>)
-  // return <img className="logo" src={Logo} alt="logo" />;
 };
 
 

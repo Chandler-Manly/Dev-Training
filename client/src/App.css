@@ -1,3 +1,16 @@
+.quiz-button {
+  width: 400px;
+  display: flex;
+}
+
+.quiz {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* transition 1second to smooth transitioning from link to link */
+
 .logo {
   display: flex;
   justify-content: flex-start;
@@ -7,6 +20,22 @@
   border: 1px solid black;
   border-radius: 4px;
   motion-rotation: auto;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
 }
 
 form {
@@ -25,6 +54,15 @@ button {
 .buttons {
   display: flex;
   justify-content: center;
+}
+
+.comment-box {
+  background-color: white;
+  max-width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 2px;
+  border: 30px black solid;
 }
 
 button:hover {background-color:#0d50e5}
@@ -51,8 +89,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to top, #0d50e5 90%, whitesmoke 50%);
-  opacity: 1;
+  background: #0d50e5;
   padding-bottom: 75px;
   padding-top: 50px;
   color: black;
