@@ -55,9 +55,6 @@ function App() {
         </div>
       </Route>
       <Route exact path="/algorithm">
-      <div className="algorithms">
-        <h3>Algorithms HERE thumbnail of graphical representation and then hover effect that shows definition/concept </h3>
-        </div>
         <div className="algos">
           {algos.map((algo) => (
             <Algorithm

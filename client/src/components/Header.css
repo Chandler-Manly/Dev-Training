@@ -1,0 +1,8 @@
+header {
+  display: flex;
+}
+
+.company-logo {
+display: flex;
+align-items: flex-start;
+}

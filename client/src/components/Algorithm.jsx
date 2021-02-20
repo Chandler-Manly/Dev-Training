@@ -3,6 +3,7 @@
 
 import axios from "axios";
 import { algoURL, algoConfig } from "../services";
+import "./Algorithm.css"
 
 function Algorithm(props) {
   
@@ -10,8 +11,8 @@ function Algorithm(props) {
 
   return (
     <div className="algo-thumbnals">
-      <p>Name: {name}</p>
-      <p>Definition: {definition}</p>
+      <p>{name}</p>
+      <p>{definition}</p>
       <img src={image} alt="Algorithm"></img>
     </div>
   );
