@@ -2,6 +2,7 @@ import { useHistory, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { baseURL, config } from "../services";
+import "./Form.css";
 
 function Form(props) {
   const [author, setAuthor] = useState("");
@@ -43,7 +44,7 @@ function Form(props) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="form">
       <label htmlFor="concept">Concept: </label>
       <input
         id="concept"
@@ -78,9 +79,10 @@ function Form(props) {
         type="text"
         onChange={(e) => setComment(e.target.value)}
       />
-      <button id="submit" type="submit">
+      {/* <button className="form-submit" id="submit" type="submit">
         Submit Me!
-      </button>
+      </button> */}
+    <input id="form-submit" type="submit"></input>
     </form>
   );
 }

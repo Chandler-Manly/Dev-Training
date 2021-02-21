@@ -1,5 +1,7 @@
-.links {
+nav {
   display: flex;
   justify-content: space-evenly;
-  
+  flex-direction: row;
+  padding-top: 25px;
 }
+

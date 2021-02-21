@@ -1,0 +1,26 @@
+img {
+  display: flex;
+  align-items: flex-end;
+  width: 200px;
+  height: 100px;
+}
+
+.company-logo {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  font-family: "Just Another Hand", cursive;
+
+}
+
+.value-prop {
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  padding-top: 25px;
+}

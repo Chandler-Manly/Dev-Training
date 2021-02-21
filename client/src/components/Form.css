@@ -1,0 +1,27 @@
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#concept {
+  max-width: 350px;
+}
+
+#author {
+  max-width: 350px;
+}
+
+#topics {
+  max-width: 350px;
+}
+
+#comment {
+  max-width: 350px;
+  height: 175px;
+}
+
+#form-submit {
+  max-width: 175px;
+  
+}

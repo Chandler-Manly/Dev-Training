@@ -42,7 +42,7 @@ function App() {
       <Nav />
 
       <Route exact path="/">
-      <div className="home">
+      <div className="about-us">
           <h3>About us</h3>
           <p>We are thrilled to provide an environment for developers from all backgrounds to get the necessary repetitions to level up from beginner to expert level. Whether you are looking to get some extra practice with our quiz feature or simply vent some debugging frustration on our "Live-Feed" the Developer's Training Ground is here for you. A Manly Technologies Company.</p>
         </div>

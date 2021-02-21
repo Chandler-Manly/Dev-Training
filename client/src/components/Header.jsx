@@ -6,14 +6,12 @@ const Header = () => {
     <div className="company-logo">
         <img src="Logo.png"></img>
       </div>
-      <div>
-      <h1>
-        Welcome to the <div className="Dev">Developer's</div> Training Ground
-      </h1>
-      <h3>
-        <em>A training ground for aspiring developers.</em>
-      </h3>
+      <div className="header">
+        Welcome to the Developer's Training Ground
       </div>
+      <div className="value-prop">
+        A training ground for aspiring developers.
+        </div>
       </div>
   );
 };

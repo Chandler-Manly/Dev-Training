@@ -1,123 +1,29 @@
-.app {
+.app{
   display: flex;
+  justify-content: center;
 }
 
-header {
-  display: flex;
-  align-content: flex-start;
-  font-family: "Just Another Hand", cursive;
-  background: #0d50e5;
-  padding-bottom: 75px;
-  padding-top: 50px;
-  color: black;
-}
-
-.quiz-button {
-  width: 400px;
-  display: flex;
-}
-
-.quiz {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-/* transition-duration: 1second to smooth transitioning from link to link */
-
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
-.fa:hover {
-  opacity: 0.7;
-}
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-form {
+.about-us{
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  width: 500px;
-}
-button {
-  display: flex;
-  justify-content: center;
-  width: 180px;
-  /* box-shadow: 0 9px #999; */
-}
-
-.buttons {
-  display: flex;
-  justify-content: center;
-}
-
-.comment-box {
-  background-color: white;
-  max-width: 600px;
-  padding: 20px;
-  margin: 20px auto;
-  border-radius: 2px;
-  border: 30px black solid;
-}
-
-button:hover {background-color:#0d50e5}
-button:active{
-  background-color: #0d50e5;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px)
-}
-
-.Dev {
-  color: #0d50e5;
-}
-
-h3 {
-  font-family: "Just Another Hand", cursive;
-}
-
-div {
-  background-color: rgb(235, 237, 240);
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: baseline;
-  background: #0d50e5;
-  position: fixed;
-  bottom: 0;
-  padding-top: 125px;
-  width: 100%;
-}
-
-Nav {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-  justify-content: space-around;
+  display:flex;
+  justify-content: flex-end;
 }
 
 @media screen and (max-width: 375px) {
   Nav {
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    align-items: flex-start;
+    /* justify-content: left;
+    align-items: flex-start; */
   }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .logo {
+  .company-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }

@@ -1,0 +1,11 @@
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: baseline;
+  background: #0d50e5;
+  position: fixed;
+  bottom: 0;
+  padding-top: 125px;
+  width: 100%;
+}

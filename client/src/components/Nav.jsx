@@ -4,13 +4,12 @@ import "./Nav.css";
 function Nav() {
   return (
     <nav>
-      <div className="links">
-      <Link to="/">Home</Link>
-      <Link to="/form">What's one thing you've learned?</Link>
-      <Link to="/algorithm">Algorithm Gallery</Link>
-      <Link to="/resources">Forum</Link>
-        <Link to="/quiz">Quiz</Link>
-        </div>
+      <ul>
+      <Link to="/">HOME</Link></ul>
+      <ul><Link to="/form">POST</Link></ul>
+      <ul><Link to="/algorithm">ALGORITHM GALLERY</Link></ul>
+      <ul><Link to="/resources">FORUM</Link></ul>
+      <ul><Link to="/quiz">QUIZ</Link></ul>
     </nav>
   );
 }

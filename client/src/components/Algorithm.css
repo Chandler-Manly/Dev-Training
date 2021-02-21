@@ -13,9 +13,19 @@
 
 .photos {
   flex-direction: row;
-  width: 250px; 
-  height: 250px;
+  width: 300px; 
+  height: 300px;
+  /* z-index: -1; */
 }
+
+.name {
+  /* z-index: 0; */
+}
+
+.definition {
+  /* z-index: 0; */
+}
+
 
 /* CSS: Z-INDEX background image */
 /* Source: https://www.dreamincode.net/forums/topic/401015-open-a-text-popup-on-image-click/ */
