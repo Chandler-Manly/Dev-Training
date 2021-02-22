@@ -1,11 +1,28 @@
+/* Source: W3 Schools */
 footer {
   display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: baseline;
-  background: #0d50e5;
-  position: fixed;
-  bottom: 0;
-  padding-top: 125px;
-  width: 100%;
+  
 }
+
+.fa {
+  padding: 8px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+  font-size:48px;
+  color:red;
+}
+
+

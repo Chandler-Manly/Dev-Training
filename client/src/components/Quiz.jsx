@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import "./Quiz.css"
 
-function App() {
+function Quiz() {
 	const questions = [
 		{
 			questionText: 'Name one difference between client-side and server-side JS?',
@@ -66,6 +66,33 @@ function App() {
 				{ answerText: 'fist-bumps', isCorrect: false },
 				{ answerText: 'peace sign', isCorrect: false },
 			],
+    },
+    {
+			questionText: 'What allows us to pass properties to components',
+			answerOptions: [
+				{ answerText: 'props', isCorrect: true },
+				{ answerText: 'daps', isCorrect: false },
+				{ answerText: 'fist-bumps', isCorrect: false },
+				{ answerText: 'peace sign', isCorrect: false },
+			],
+    },
+    {
+			questionText: 'What allows us to pass properties to components',
+			answerOptions: [
+				{ answerText: 'props', isCorrect: true },
+				{ answerText: 'daps', isCorrect: false },
+				{ answerText: 'fist-bumps', isCorrect: false },
+				{ answerText: 'peace sign', isCorrect: false },
+			],
+    },
+    {
+			questionText: 'What allows us to pass properties to components',
+			answerOptions: [
+				{ answerText: 'props', isCorrect: true },
+				{ answerText: 'daps', isCorrect: false },
+				{ answerText: 'fist-bumps', isCorrect: false },
+				{ answerText: 'peace sign', isCorrect: false },
+			],
 		},
 	];
 
@@ -87,14 +114,14 @@ function App() {
 			setShowScore(true);
 		}
 	};
-	return (
-		<div className='app'>
+  return (
+    <div className='quiz-app'>
+		<div>
 			{showScore ? (
 				<div className='score-section'>
-					You scored {score} out of {questions.length}! Keep training! The force is strong with you.
-				</div>
-			) : (
-				<>
+            You scored {score} out of {questions.length}! "Keep training! The force is strong with you."
+          </div>) :
+          (<>
 					<div className='question-section'>
 						<div className='question-count'>
 							<span>Question {currentQuestion + 1}</span>/{questions.length}
@@ -108,8 +135,9 @@ function App() {
 					</div>
 				</>
 			)}
-		</div>
+      </div>
+      </div>
 	);
 }
 
-export default App 
+export default Quiz 

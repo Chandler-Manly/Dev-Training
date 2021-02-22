@@ -4,13 +4,19 @@
 import "./Algorithm.css";
 
 function Algorithm(props) {
-  const { name, definition, image } = props.algo.fields;
 
+  const { name, definition, image } = props.algo.fields;
   return (
-    <div className="algo-thumbnails">
-      <p className="name">{name}</p>
-      <p className="definition">{definition}</p>
-      <img src={image} alt="Algorithm" className="photos"></img>
+    <div className="algo-thumbnail">
+    <div className="algo-images">
+      <img src={image} /> 
+      </div>
+    <div className="algo-name">
+      {name}
+      </div>
+    <div className="algo-definition">
+      {definition}
+      </div>
     </div>
   );
 }

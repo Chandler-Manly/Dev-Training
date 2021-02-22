@@ -40,6 +40,11 @@ function App() {
     <div className="App">
       <Header /> 
       <Nav />
+      <div className="quiz">
+      <Link to={`/quiz`}>
+      <button className="quiz-button" type="submit">Do you have what it takes to be on Team Sapphire:Take our quiz and discover your potential.</button>
+        </Link>
+        </div>
 
       <Route exact path="/">
       <div className="about-us">
@@ -59,19 +64,8 @@ function App() {
           ))}
         </div>
       </Route>
-
-      <Route exact path="/data-structures">
-      <div className="data-structures">
-        <h3>Data-Structures HERE</h3>
-        </div>
-      </Route>
       
       <Route path="/quiz"> <Quiz />
-      <div className="quiz">
-      <Link to={`/quiz`}>
-      <button className="quiz-button" type="submit">Do you have what it takes to be on Team Sapphire:Take our quiz and discover your potential.</button>
-        </Link>
-        </div>
         </Route>
 
       <Route exact path="/form">

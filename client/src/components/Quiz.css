@@ -1,115 +1,33 @@
 /* Source: https://www.freecodecamp.org/news/how-to-build-a-quiz-app-using-react/ */
 
-.app {
-  background-color: #0d50e5;
-  width: 450px;
-  min-height: 200px;
-  height: min-content;
-  padding: 20px;
-  /* box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75); */
+.quiz-app {
   display: flex;
+  border-style: solid;
+  border-width: 5px;
+  max-width: 500px;
+  background-color: white;  
 }
 
 .score-section {
   display: flex;
-  font-size: 24px;
-  align-items: center;
 }
 
-/* QUESTION/TIMER/LEFT SECTION */
-.question-section {
-  width: 100%;
-  position: relative;
-}
-
-/* ANSWERS/RIGHT SECTION */
-.answer-section {
-  width: 100%;
+.question-section{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
-button {
-  width: 100%;
-  font-size: 16px;
-  color: black;
-  /* background-color: #0d50e5; */
-  border-radius: 15px;
+.question-count {
   display: flex;
+  justify-content: center;
   padding: 5px;
-  justify-content: flex-start;
-  align-items: center;
-  /* border: 5px solid #0d50e5; */
-  cursor: pointer;
 }
 
-.correct {
-  background-color: #2f922f;
-}
-
-.incorrect {
-  background-color: #ff3333;
-}
-
-button:hover {
-  background-color: #555e7d;
-}
-
-
-.quiz-button {
-  width: 400px;
+.question-text {
   display: flex;
 }
 
-.quiz {
+.answer-section {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-/* transition-duration: 1second to smooth transitioning from link to link */
-
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
-.fa:hover {
-  opacity: 0.7;
-}
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-button {
-  display: flex;
-  justify-content: center;
-  width: 180px;
-  /* box-shadow: 0 9px #999; */
-}
-
-.buttons {
-  display: flex;
-  justify-content: center;
-}
-
-.comment-box {
-  background-color: white;
-  max-width: 600px;
-  padding: 20px;
-  margin: 20px auto;
-  border-radius: 2px;
-  border: 30px black solid;
-}
-
-button:hover {background-color:#0d50e5}
-button:active{
-  background-color: #0d50e5;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px)
+  flex-direction: column;
 }

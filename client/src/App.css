@@ -1,6 +1,6 @@
 .app{
   display: flex;
-  justify-content: center;
+
 }
 
 .about-us{
@@ -8,9 +8,17 @@
   flex-direction: column;
 }
 
-footer {
-  display:flex;
-  justify-content: flex-end;
+.quiz-button {
+  display: flex;
+  width: 325px;
+  justify-content: flex-start;
+}
+
+.quiz-button:hover{
+  background-color: #007bb5;
+  width: 375px;
+  font-weight: bolder;
+
 }
 
 @media screen and (max-width: 375px) {
