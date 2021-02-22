@@ -3,8 +3,7 @@ import { useState } from "react";
 const Typeahead = (props) => {
   const [concept, setConcept] = useState("");
   const filteredInfos = props.infos.filter((info) =>
-    info.fields.concept.toLowerCase().includes(concept.toLowerCase())
-  );
+    info.fields.concept.toLowerCase().includes(concept.toLowerCase()));
 
   return (
     <div className="typeahead">

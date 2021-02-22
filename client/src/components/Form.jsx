@@ -70,7 +70,7 @@ function Form(props) {
         <option value="CSS">CSS</option>
         <option value="Javascript Vanilla">Javascript Vanilla</option>
         <option value="React">React</option>
-        <option value="IDK">Unsure</option>
+        <option value="Time to google...">Unsure</option>
       </select>
       <label htmlFor="comment">Comment: </label>
       <textarea

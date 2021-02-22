@@ -1,8 +1,15 @@
 /* source: W3 Schools  */
 footer {
   display: flex;
+  justify-content: space-around;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  color: whitesmoke;
 }
-
+/* 
 .fa {
   padding: 8px;
   font-size: 30px;
@@ -20,6 +27,6 @@ footer {
 }
 
 .fa-github {
-  font-size: 48px;
+  font-size: 60px;
   color: black;
-}
+} */

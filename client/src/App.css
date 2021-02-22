@@ -1,7 +1,12 @@
-header {
-  background-color: blue;
+.quiz-button {
+  max-width: 250px;
 }
 
+.quiz-button:hover {
+  background-color: #4267b2;
+  font-weight: bolder;
+  max-width: 300px;
+}
 
 @media screen and (max-width: 375px) {
   Nav {

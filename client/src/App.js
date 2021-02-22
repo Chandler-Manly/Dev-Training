@@ -52,6 +52,10 @@ function App() {
         </Link>
       </div>
 
+      <Route path="/quiz">
+        <Quiz/>
+      </Route>
+
       <Route exact path="/">
         <div className="about-us">
           <h3>About us</h3>

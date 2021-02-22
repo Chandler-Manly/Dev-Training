@@ -8,7 +8,7 @@ function Algorithm(props) {
   return (
     <div className="algo-thumbnail">
       <div className="algo-images">
-        <img src={image} />
+        <img className="algo-pics" src={image} />
       </div>
       <div className="algo-name">{name}</div>
       <div className="algo-definition">{definition}</div>
