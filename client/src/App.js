@@ -89,7 +89,7 @@ function App() {
       </Route>
 
       <Route path="/resources">
-        <Typeahead infos={infos} />
+        {/* <Typeahead infos={infos} /> */}
         <div className="resources">
           {infos.map((info) => (
             <Comments
