@@ -1,23 +1,18 @@
-.algo-thumbnails {
-  display: flex;
-  flex-direction: row;
-  opacity: 1;
-}
-.algo-thumbnails > img {
-  opacity: 0.65;
-}
-.algo-thumbnails:hover > img:hover {
-  transition-duration: 0.5s;
-  opacity: 1;
-}
-
-.photos {
+.algo-images {
   display: flex;
   flex-direction: row;
   width: 300px;
   height: 300px;
-  z-index: -1;
+  opacity: 1;
 }
+.algo-images > img {
+  opacity: 0.65;
+}
+.algo-images:hover > img:hover {
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+
 
 /* CSS: Z-INDEX background image */
 /* Source: https://www.dreamincode.net/forums/topic/401015-open-a-text-popup-on-image-click/ */

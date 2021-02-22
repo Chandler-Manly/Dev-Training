@@ -1,35 +1,7 @@
-.App {
-  background-color: #fa9a60;
+header {
+  background-color: blue;
 }
 
-.header {
-  background-color: #fdcb82;
-}
-
-.nav {
-  background-color: #ff4e50;
-}
-
-.footer {
-  background-color: #fc913a;
-}
-
-.about-us {
-  background-color: #f9d423;
-}
-.form {
-  background-color: #ede574;
-}
-
-.quiz-button {
-background-color: cadetblue;
-}
-
-.quiz-button:hover {
-  background-color: #007bb5;
-  width: 375px;
-  font-weight: bolder;
-}
 
 @media screen and (max-width: 375px) {
   Nav {
