@@ -44,10 +44,10 @@ function App() {
         <Nav />
       </div>
       <div className="quiz">
+        <div className="discover">Discover Your Expertise.</div>
         <Link to={`/quiz`}>
           <button className="quiz-button" type="submit">
-            Do you have what it takes to be on Team Sapphire:Take our quiz and
-            discover your potential.
+            START THE DEVELOPER'S QUIZ
           </button>
         </Link>
       </div>

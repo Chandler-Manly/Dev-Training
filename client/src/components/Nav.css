@@ -4,3 +4,7 @@ nav {
   flex-direction: row;
   padding-top: 25px;
 }
+
+Link:visited {
+ color: black;
+}

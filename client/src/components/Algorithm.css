@@ -5,6 +5,13 @@
   padding-top: 25px;
   opacity: 1;
 }
+
+.algo-definition {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 500px;
+}
 .algo-images > img {
   opacity: 0.65;
 }

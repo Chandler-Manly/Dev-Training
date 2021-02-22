@@ -2,31 +2,33 @@
 footer {
   display: flex;
   justify-content: space-around;
-  position: relative;
+  position: absolute;
   left: 0;
   bottom: 0;
   right: 0;
   background-color: black;
   color: whitesmoke;
+  align-items: center;
 }
-/* 
-.fa {
+
+ .fa {
   padding: 8px;
   font-size: 30px;
   width: 30px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
+  color: whitesmoke
 }
+
 .fa:hover {
   opacity: 0.7;
 }
+/*
 .fa-linkedin {
-  background: #007bb5;
-  color: white;
+
 }
 
 .fa-github {
-  font-size: 60px;
-  color: black;
-} */
+ 
+}  */

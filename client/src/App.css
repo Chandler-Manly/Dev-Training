@@ -1,5 +1,32 @@
+.discover {
+  color: #4267b2;
+  font-weight: bolder;
+  font-size: xx-large;
+  width: 350px;
+  margin-left: 100px;
+}
+
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  width: 750px;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+}
+
+
 .quiz-button {
+  display: flex;
+  justify-content: flex-start;
   max-width: 250px;
+  font-size: large;
+  margin-left: 100px;
+  
 }
 
 .quiz-button:hover {

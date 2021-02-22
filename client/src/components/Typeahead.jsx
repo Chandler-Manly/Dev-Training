@@ -1,8 +1,9 @@
 import { useState } from "react";
-// Attended workshopd during project week for this code.
+// Attended workshop during project week for this code.
+
 const Typeahead = (props) => {
   const [concept, setConcept] = useState("");
-  const filteredInfos = props.infos.filter((info) =>
+  const filteredInfos = props.fields.filter((info) =>
     info.fields.concept.toLowerCase().includes(concept.toLowerCase()));
 
   return (

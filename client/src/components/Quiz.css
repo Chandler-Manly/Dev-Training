@@ -4,6 +4,9 @@
   border-style: solid;
   background-color: #4267b2;
   padding-top: 25px;
+  max-width: 750px;
+  margin-left: 100px;
+  margin-top: 10px;
 }
 
 .score-section {
