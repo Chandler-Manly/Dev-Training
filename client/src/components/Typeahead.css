@@ -1,22 +1,22 @@
 .typeahead {
-position: relative;
-display: block;
+  position: relative;
+  display: block;
 }
 
 .typeahead-results {
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-align-self: center;
-position: absolute;
-top: 0;
-left: 0;
-box-sizing: border-box;
-border: 1px solid black;
-width: 200px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-self: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 200px;
 }
 
 .typeahead-results p {
-/* hover effects can go here */
+  /* hover effects can go here */
 }

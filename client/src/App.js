@@ -8,7 +8,7 @@ import Typeahead from "./components/Typeahead";
 import Comments from "./components/Comments";
 import Form from "./components/Form";
 import Header from "./components/Header";
-import Footer from "./components/Footer"
+import Footer from "./components/Footer";
 import Quiz from "./components/Quiz";
 import Algorithm from "./components/Algorithm";
 import "./components/Typeahead.css";
@@ -17,7 +17,7 @@ import "./App.css";
 function App() {
   const [infos, setInfos] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(false);
-  const [algos, setAlgos] = useState([])
+  const [algos, setAlgos] = useState([]);
 
   useEffect(() => {
     const getInfos = async () => {
@@ -26,7 +26,6 @@ function App() {
     };
     getInfos();
   }, [toggleFetch]);
-
 
   useEffect(() => {
     const getAlgos = async () => {
@@ -38,18 +37,32 @@ function App() {
 
   return (
     <div className="App">
-      <Header /> 
-      <Nav />
+      <div className="header">
+        <Header />
+      </div>
+      <div className="nav">
+        <Nav />
+      </div>
       <div className="quiz">
-      <Link to={`/quiz`}>
-      <button className="quiz-button" type="submit">Do you have what it takes to be on Team Sapphire:Take our quiz and discover your potential.</button>
+        <Link to={`/quiz`}>
+          <button className="quiz-button" type="submit">
+            Do you have what it takes to be on Team Sapphire:Take our quiz and
+            discover your potential.
+          </button>
         </Link>
-        </div>
+      </div>
 
       <Route exact path="/">
-      <div className="about-us">
+        <div className="about-us">
           <h3>About us</h3>
-          <p>We are thrilled to provide an environment for developers from all backgrounds to get the necessary repetitions to level up from beginner to expert level. Whether you are looking to get some extra practice with our quiz feature or simply vent some debugging frustration on our "Live-Feed" the Developer's Training Ground is here for you. A Manly Technologies Company.</p>
+          <p>
+            We are thrilled to provide an environment for developers from all
+            backgrounds to get the necessary repetitions to level up from
+            beginner to expert level. Whether you are looking to get some extra
+            practice with our quiz feature or simply vent some debugging
+            frustration on our Forum the Developer's Training Ground is here for
+            you.
+          </p>
         </div>
       </Route>
 
@@ -64,12 +77,11 @@ function App() {
           ))}
         </div>
       </Route>
-      
-      <Route path="/quiz"> <Quiz />
-        </Route>
 
       <Route exact path="/form">
-        <Form infos={infos} setToggleFetch={setToggleFetch} />
+        <div className="post-form">
+          <Form infos={infos} setToggleFetch={setToggleFetch} />
+        </div>
       </Route>
 
       <Route path="/resources">
@@ -87,9 +99,10 @@ function App() {
 
       <Route path="/edit/:id">
         <Form infos={infos} setToggleFetch={setToggleFetch} />
-        
       </Route>
-      <Footer />
+      <div className="footer">
+        <Footer />
+      </div>
     </div>
   );
 }

@@ -1,7 +1,5 @@
-/* Source: W3 Schools */
-footer {
+source: W3 Schools footer {
   display: flex;
-  
 }
 
 .fa {
@@ -21,8 +19,6 @@ footer {
 }
 
 .fa-github {
-  font-size:48px;
-  color:red;
+  font-size: 48px;
+  color: black;
 }
-
-

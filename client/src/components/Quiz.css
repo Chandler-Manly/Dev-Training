@@ -1,18 +1,18 @@
-/* Source: https://www.freecodecamp.org/news/how-to-build-a-quiz-app-using-react/ */
+Source: https://www.freecodecamp.org/news/how-to-build-a-quiz-app-using-react/
 
 .quiz-app {
   display: flex;
   border-style: solid;
   border-width: 5px;
   max-width: 500px;
-  background-color: white;  
+  background-color: white;
 }
 
 .score-section {
   display: flex;
 }
 
-.question-section{
+.question-section {
   display: flex;
   flex-direction: column;
 }
