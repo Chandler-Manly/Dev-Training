@@ -7,8 +7,4 @@ export const config = {
 };
 export const algoURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASETWO}/algorithms`;
 
-export const algoConfig = {
-  headers: {
-    Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEYTWO}`,
-  },
-};
+

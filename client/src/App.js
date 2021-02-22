@@ -29,7 +29,7 @@ function App() {
 
   useEffect(() => {
     const getAlgos = async () => {
-      const response = await axios.get(algoURL, algoConfig);
+      const response = await axios.get(algoURL, config);
       setAlgos(response.data.records);
     };
     getAlgos();
