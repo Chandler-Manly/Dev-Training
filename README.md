@@ -1,11 +1,10 @@
 # Dev-Training
 
-- This web-app is deployed via Netlify.
-- ![Netlify](https://determined-hopper-0e021f.netlify.app/)
+- This web-app is deployed via [Netlify](https://determined-hopper-0e021f.netlify.app/).
 
 ## Project Description
 
-Dev-Training is an Airtable and React build where the user is able to leave a comment for several software development topics: HTML, CSS, JS. The homepage will offer three different paths on the Nav bar so the user can quickly get to the general topic populated with a feed of previously posted comments. Each page will have a form to create new comments. Users will be able to delete and edit this comment. 
+Dev-Training is an Airtable and React build where the user is able to leave a comment for several software development topics: HTML, CSS, JS. The homepage will offer three different paths on the Nav bar so the user can quickly get to the general topic populated with a feed of previously posted comments. Each page will have a form to create new comments. Users will be able to delete and edit this comment. The following dependencies will need to be installed via npm install axios, react-router-dom.
 
 ## Wireframes
 
@@ -60,7 +59,6 @@ https://drive.google.com/file/d/1aLEGh4pnBRqWy_yyItkVQcgJbn_2hS4W/view?usp=shari
 
 ```
 #### MVP 
-- Create links that navigate user to appropriate feed 
 - Render previous comments on respective page 
 - Allow user to submit, delete, and edit comments to airtable database
 
@@ -74,26 +72,26 @@ https://drive.google.com/file/d/1aLEGh4pnBRqWy_yyItkVQcgJbn_2hS4W/view?usp=shari
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Feb 16| Prompt / Wireframes / Priority Matrix / Timeframes | Project Approval | Incomplete
-|Feb 17| Core Application Structure (HTML, CSS, JS), render data from airtable on appropriate pages | Incomplete 
-|Feb 18| Add flexbox styling and advance CSS | Incomplete
-|Feb 19| Cleanup code, final review, and deploy! | Incomplete
+|Feb 16| Prompt / Wireframes / Priority Matrix / Timeframes | Project Approval | Complete
+|Feb 17| Core Application Structure (HTML, CSS, JS), render data from airtable on appropriate pages | Complete 
+|Feb 18| Add flexbox styling and advance CSS | Complete
+|Feb 19| Cleanup code, final review, and deploy! | Complete
 
 ## Timeframes
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Initial configuration (install dependencies, npx create-react-app, etc.) | H | 1.5hrs|  |  |
-| Create component files and add basic HTML structure and CSS styling | H | 3hrs|  |  |
-| Add additional content to airtable | H | 4hrs|  |  |
-| Add links to navbar | H | 2hrs|  |  |
-| search for language icon images | H | 1hrs|  |  |
-| Create POST request and test functionality | H | 4hrs|  |  |
-| Create DELETE request and test functionality | H | 4hrs|  |  |
-| Create EDIT functionality | H | 3hrs|  |  |
-| Make sure posts are properly sorted to their respective feeds | H | 4hrs|  |  |
-| Finalize color palette and styling | H | 4hrs|  |  |
-| Total | H | 30.5hrs|  |  |
+| Initial configuration (install dependencies, npx create-react-app, etc.) | H | 1.5hrs| 1 | 1 |
+| Create component files and add basic HTML structure and CSS styling | H | 3hrs| 3.5 | 3.5 |
+| Add additional content to airtable | H | 4hrs| 5 | 5 |
+| Add links to navbar | H | 2hrs| 1.5 | 1.5 |
+| search for language icon images | H | 1hrs| .5 | .5 |
+| Create POST request and test functionality | H | 4hrs| 3 | 3 |
+| Create DELETE request and test functionality | H | 4hrs| 5 | 5 |
+| Create EDIT functionality | H | 3hrs| 4 | 4 |
+| Make sure posts are properly sorted to their respective feeds | H | 4hrs| 1 | 1 |
+| Finalize color palette, styling, media queries | H | 4hrs| 5 | 7 |
+| Total | H | 30.5hrs| 29.5 | 31.5 |
 
 ## SWOT Analysis
 
@@ -105,8 +103,11 @@ https://drive.google.com/file/d/1aLEGh4pnBRqWy_yyItkVQcgJbn_2hS4W/view?usp=shari
 - CSS and styling continues to be my achilles heel but may need to collaborate with another student
 
 ### Opportunities:
-- Gain more hands-on experience with ReactReact
-
+- Gain more hands-on experience with CRUD, JavaScript, and React framework
 
 ### Threats:
 - User experience and design 
+
+## Change Log
+- Had to deviate from the original wireframe re parsing data by topic and changed concept to a general forum
+- Within the form table I created a drop down list with the specific topics so each comment will be tagged and can be sorted when the team refactors this project
