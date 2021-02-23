@@ -5,6 +5,6 @@ nav {
   padding-top: 25px;
 }
 
-Link:visited {
+nav:visited {
  color: black;
 }

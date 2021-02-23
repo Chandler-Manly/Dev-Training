@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { baseURL, config } from "../services";
+import "./Comments.css"
 
 function Comments(props) {
   const deleteComment = async () => {
@@ -13,12 +14,13 @@ function Comments(props) {
 
   return (
     <div className="comment-box">
-      <p>Concept: {concept}</p>
-      <p>Author: {author}</p>
-      <p>Topic: {topic}</p>
       <p>Comment: {comment}</p>
+      <p>Concept: {concept}</p>
+      <p>Topic: {topic}</p>
+      <p>Author: {author}</p>
       <div className="buttons">
         <button onClick={deleteComment}>Delete</button>
+        
         <Link to={`/edit/${props.info.id}`}>
           <button>Edit</button>
         </Link>

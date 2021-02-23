@@ -1,4 +1,6 @@
 // Source: https://github.com/chrisblakely01/quiz-app/blob/master/final/src/App.js
+// Source: Questions from Soleil's Team Sapphire Gauntlet
+
 import React, { useState } from "react";
 import "./Quiz.css";
 
@@ -86,36 +88,9 @@ function Quiz() {
       questionText: "What allows us to pass properties to components",
       answerOptions: [
         { answerText: "props", isCorrect: true },
-        { answerText: "daps", isCorrect: false },
-        { answerText: "fist-bumps", isCorrect: false },
-        { answerText: "peace sign", isCorrect: false },
-      ],
-    },
-    {
-      questionText: "Test Question?",
-      answerOptions: [
-        { answerText: "A", isCorrect: true },
-        { answerText: "B", isCorrect: false },
-        { answerText: "C", isCorrect: false },
-        { answerText: "D", isCorrect: false },
-      ],
-    },
-    {
-      questionText: "Test Question?",
-      answerOptions: [
-        { answerText: "A", isCorrect: true },
-        { answerText: "B", isCorrect: false },
-        { answerText: "C", isCorrect: false },
-        { answerText: "D", isCorrect: false },
-      ],
-    },
-    {
-      questionText: "Test Question?",
-      answerOptions: [
-        { answerText: "A", isCorrect: true },
-        { answerText: "B", isCorrect: false },
-        { answerText: "C", isCorrect: false },
-        { answerText: "D", isCorrect: false },
+        { answerText: "node_modules", isCorrect: false },
+        { answerText: "components", isCorrect: false },
+        { answerText: "services", isCorrect: false },
       ],
     },
   ];
@@ -146,7 +121,7 @@ function Quiz() {
         {showScore ? (
           <div className="score-section">
             You scored {score} out of {questions.length}! "Keep training! The
-            force is strong with you."
+            force is strong with you. Refresh the webpage if you would like to restart the quiz."
           </div>
         ) : (
           <>

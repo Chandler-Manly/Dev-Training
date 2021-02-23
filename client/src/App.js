@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 import { Route } from "react-router-dom";
-import { baseURL, config, algoURL, algoConfig } from "./services";
+import { baseURL, config, algoURL } from "./services";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import Nav from "./components/Nav";
-import Typeahead from "./components/Typeahead";
 import Comments from "./components/Comments";
 import Form from "./components/Form";
 import Header from "./components/Header";
@@ -53,7 +52,7 @@ function App() {
       </div>
 
       <Route path="/quiz">
-        <Quiz/>
+        <Quiz />
       </Route>
 
       <Route exact path="/">
@@ -65,20 +64,8 @@ function App() {
             beginner to expert level. Whether you are looking to get some extra
             practice with our quiz feature or simply vent some debugging
             frustration on our Forum the Developer's Training Ground is here for
-            you.
+            you. 3, 2, 1, -- NPX create-react-app.
           </p>
-        </div>
-      </Route>
-
-      <Route exact path="/algorithm">
-        <div className="algos">
-          {algos.map((algo) => (
-            <Algorithm
-              key={algo.id}
-              algo={algo}
-              setToggleFetch={setToggleFetch}
-            />
-          ))}
         </div>
       </Route>
 
@@ -88,9 +75,23 @@ function App() {
         </div>
       </Route>
 
+      <Route path="/algorithm">
+        <div className="show">
+        {algos.map((algo) => (
+            <Algorithm
+              key={algo.id}
+              algo={algo}
+              setToggleFetch={setToggleFetch}
+            />
+          ))}
+        </div>
+      </Route>
+
+
       <Route path="/resources">
-        {/* <Typeahead infos={infos} /> */}
         <div className="resources">
+        <h3>Share some wisdom here</h3>
+      <h3>Recently mastered concept or a persistent bug all is welcomed</h3>
           {infos.map((info) => (
             <Comments
               key={info.id}
@@ -104,9 +105,10 @@ function App() {
       <Route path="/edit/:id">
         <Form infos={infos} setToggleFetch={setToggleFetch} />
       </Route>
-      <div className="footer">
+
+      <footer>
         <Footer />
-      </div>
+      </footer>
     </div>
   );
 }

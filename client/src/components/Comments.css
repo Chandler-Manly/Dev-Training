@@ -1,0 +1,16 @@
+.comment-box {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  background-color: #4267b2;
+  opacity: .8;
+  margin: 100px;
+  width: 650px;
+  box-shadow: 10px 5px 5px gray;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

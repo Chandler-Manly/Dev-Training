@@ -2,14 +2,21 @@
 // Images from: https://unsplash.com/
 
 import "./Algorithm.css";
+import { Link } from "react-router-dom";
 
 function Algorithm(props) {
   const { name, definition, image } = props.algo.fields;
-  return (
+
+  return (  
     <div className="algo-thumbnail">
+              <div className="algos">
+
+        </div>
       <div className="algo-images">
-        <img className="algo-pics" src={image} />
-      </div>
+        <Link to={`/algorithm`}>
+          <img className="algo-pics" src={image} />
+          </Link>
+        </div>
       <div className="algo-name">{name}</div>
       <div className="algo-definition">{definition}</div>
     </div>

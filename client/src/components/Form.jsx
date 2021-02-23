@@ -44,7 +44,7 @@ function Form(props) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="form">
+    <form onSubmit={handleSubmit} className="form" required>
       <label htmlFor="concept">Concept: </label>
       <input
         id="concept"

@@ -5,10 +5,10 @@ function Nav() {
   return (
     <nav>
       <ul>
-        <Link to="/algorithm">ALGORITHM GALLERY</Link>
+        <Link to="/algorithm/">ALGORITHM GALLERY</Link>
       </ul>
       <ul>
-        <Link to="/form">POST</Link>
+        <Link to="/form">NEW POST</Link>
       </ul>
       <ul>
         <Link to="/resources">FORUM</Link>
