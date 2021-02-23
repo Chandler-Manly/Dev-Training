@@ -52,7 +52,7 @@ function Quiz() {
     },
     {
       questionText:
-        "what command lets devs install new dpeendencies to a project",
+        "what command lets devs install new dependencies to a project",
       answerOptions: [
         { answerText: "npm install -dependency", isCorrect: true },
         { answerText: "npm run start", isCorrect: false },

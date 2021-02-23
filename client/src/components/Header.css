@@ -11,6 +11,7 @@ img {
 }
 
 .header {
+  width: 100%;
   padding-top: 10px;
   background-color: black;
   color: whitesmoke;
@@ -25,4 +26,34 @@ img {
   font-size: large;
   padding-top: 25px;
   padding-bottom: 20px;
+}
+
+@media screen and (max-width: 375px) {
+  img {
+    display: flex;
+    align-items: flex-end;
+    width: 150px;
+    height: 75px;
+  }
+  
+  .company-logo {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .header {
+    width: 375px;
+    padding-top: 5px;
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    font-size: large;
+    font-family: 'Londrina Solid';}
+  
+  .value-prop {
+    display: flex;
+    font-size: medium;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
 }

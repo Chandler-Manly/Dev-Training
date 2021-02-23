@@ -76,6 +76,7 @@ function App() {
       </Route>
 
       <Route path="/algorithm">
+        <h3>When you learn these algos the sky is the limit!</h3>
         <div className="show">
         {algos.map((algo) => (
             <Algorithm

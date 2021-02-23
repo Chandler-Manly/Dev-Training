@@ -1,10 +1,14 @@
 nav {
   display: flex;
-  justify-content: space-evenly;
   flex-direction: row;
   padding-top: 25px;
 }
 
-nav:visited {
- color: black;
+
+@media screen and (max-width: 375px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+  }
 }

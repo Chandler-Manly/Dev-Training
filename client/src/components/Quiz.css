@@ -5,11 +5,10 @@
   background-color: #4267b2;
   padding-top: 25px;
   max-width: 750px;
-  margin-left: 100px;
   margin-top: 10px;
   color: whitesmoke;
-  font-weight: bolder
-  ;
+  font-weight: bolder;
+  box-shadow: 10px 5px 5px gray;
   
 }
 
@@ -30,4 +29,11 @@ display: flex;
 .answer-section {
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (max-width: 375px) {
+
+  .quiz-app {
+    margin-left: 0px;
+  }  
 }

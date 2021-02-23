@@ -1,4 +1,10 @@
-.algo-images {
+.algo-thumbnail {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.algo-pics {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -12,10 +18,10 @@
   flex-direction: row;
   width: 500px;
 }
-.algo-images > img {
+.algo-pics > img {
   opacity: 0.65;
 }
-.algo-images:hover > img:hover {
+.algo-pics:hover > img:hover {
   transition-duration: 0.5s;
   opacity: 1;
 }
@@ -24,6 +30,36 @@
 
   width: 500px;
   height: 500px;
+}
+
+@media screen and (max-width: 375px) {
+  .algo-pics {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 25px;
+    opacity: 1;
+  }
+  
+  .algo-definition {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 375px;
+  }
+  .algo-pics > img {
+    opacity: 0.65;
+  }
+  .algo-pics:hover > img:hover {
+    transition-duration: 0.5s;
+    opacity: 1;
+  }
+  
+  .algo-pics {
+  
+    width: 375px;
+    height: 375px;
+  } 
 }
 
 

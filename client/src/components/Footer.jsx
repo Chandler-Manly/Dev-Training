@@ -18,7 +18,4 @@ function Footer() {
   );
 }
 
-// https://res.cloudinary.com/briandanger/image/upload/v1568954107/github_fpykxh.png
-// https://res.cloudinary.com/briandanger/image/upload/v1568954107/linkedin_vnvo6s.png
-
 export default Footer;

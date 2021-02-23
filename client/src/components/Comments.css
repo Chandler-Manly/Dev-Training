@@ -4,13 +4,38 @@
   border-style: solid;
   background-color: #4267b2;
   opacity: .8;
-  margin: 100px;
   width: 650px;
   box-shadow: 10px 5px 5px gray;
+  padding-top: 5px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .button {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
+
+@media screen and (max-width: 375px) {
+  .comment-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-style: solid;
+    background-color: #50c5a8;
+    opacity: .8;
+    width: 375px;
+    box-shadow: 10px 5px 5px gray;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
