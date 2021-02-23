@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+# Dev-Training
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- This web-app is deployed via [Netlify](https://determined-hopper-0e021f.netlify.app/).
 
-## Available Scripts
+## Project Description
 
-In the project directory, you can run:
+Dev-Training is an Airtable and React build where the user is able to leave a comment for several software development topics: HTML, CSS, JS. The homepage will offer three different paths on the Nav bar so the user can quickly get to the general topic populated with a feed of previously posted comments. Each page will have a form to create new comments. Users will be able to delete and edit this comment. The following dependencies will need to be installed via npm install axios, react-router-dom.
 
-### `npm start`
+## Wireframes
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The wireframes below illustrate Dev-Training's responsiveness relative to monitor and phone formats. We will have each language's icon: HTML, CSS, JS; be clickable and will properly navigate to the appropriate feed.The comment feed has a form, submit button, and an edit button. As the screen size decreases the form and buttons will move to the center of the page. Regarding the homepage, the Nav Bar icons will change from horizontal to verticle.
+Iphone X 375x812
+Laptop with HiDPI screen 1440x900
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+https://drive.google.com/file/d/1s4qeD8BeqHMwORCbboDGVeGUVqqfASwh/view?usp=sharing
 
-### `npm test`
+## Component Hierarchy
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+https://drive.google.com/file/d/1aLEGh4pnBRqWy_yyItkVQcgJbn_2hS4W/view?usp=sharing
 
-### `npm run build`
+## API and Data Sample
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```json
+{
+    "records": [
+        {
+            "id": "recR0jggUdgvtRgQx",
+            "fields": {
+                "concept": "Array.prototype.indexOf()",
+                "author": "MDN Source Doc",
+                "comment": "In plain english, this means: The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not pres...",
+                "topic": "JS"
+            },
+            "createdTime": "2021-02-16T16:08:36.000Z"
+        },
+        {
+            "id": "rec6eSELNCWwS4X00",
+            "fields": {
+                "concept": "<a> tag",
+                "comment": "Use this for audobon assignment: Defines a hyperlink",
+                "topic": "HTML",
+                "author": "https://www.w3schools.com/tags/"
+            },
+            "createdTime": "2021-02-16T16:08:36.000Z"
+        },
+        {
+            "id": "recAD89NWTBnUYWEn",
+            "fields": {
+                "comment": "It defines whether the flex items are forced in a single line or can be flowed into multiple lines. If set to multiple lines, it also defines the cros...",
+                "concept": "flex-wrap",
+                "author": "css.tricks",
+                "topic": "CSS"
+            },
+            "createdTime": "2021-02-16T16:08:36.000Z"
+        }
+    ],
+    "offset": "recAD89NWTBnUYWEn"
+}
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+#### MVP 
+- Render previous comments on respective page 
+- Allow user to submit, delete, and edit comments to airtable database
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### PostMVP  
+- Functionality to pin specific comments so users can tailor their desired comments. 
+- Dark mode toggle fetch 
+- Initial quiz to identify skill level then filter comments based on skill level
+- Add exercises to make more engaging like debugging
 
-### `npm run eject`
+## Project Schedule
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+|  Day | Deliverable | Status
+|---|---| ---|
+|Feb 16| Prompt / Wireframes / Priority Matrix / Timeframes | Project Approval | Complete
+|Feb 17| Core Application Structure (HTML, CSS, JS), render data from airtable on appropriate pages | Complete 
+|Feb 18| Add flexbox styling and advance CSS | Complete
+|Feb 19| Cleanup code, final review, and deploy! | Complete
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Timeframes
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Initial configuration (install dependencies, npx create-react-app, etc.) | H | 1.5hrs| 1 | 1 |
+| Create component files and add basic HTML structure and CSS styling | H | 3hrs| 3.5 | 3.5 |
+| Add additional content to airtable | H | 4hrs| 5 | 5 |
+| Add links to navbar | H | 2hrs| 1.5 | 1.5 |
+| search for language icon images | H | 1hrs| .5 | .5 |
+| Create POST request and test functionality | H | 4hrs| 3 | 3 |
+| Create DELETE request and test functionality | H | 4hrs| 5 | 5 |
+| Create EDIT functionality | H | 3hrs| 4 | 4 |
+| Make sure posts are properly sorted to their respective feeds | H | 4hrs| 1 | 1 |
+| Finalize color palette, styling, media queries | H | 4hrs| 5 | 7 |
+| Total | H | 30.5hrs| 29.5 | 31.5 |
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## SWOT Analysis
 
-## Learn More
+### Strengths:
+- Team Sapphire and the GA commnuity's resources: TA hours, issue tickets, and fellow Sapphires
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Weaknesses:
+- Still gaining familiarity with handleSubmit, useState, and useEffect - so still mastering the content
+- CSS and styling continues to be my achilles heel but may need to collaborate with another student
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Opportunities:
+- Gain more hands-on experience with CRUD, JavaScript, and React framework
 
-### Code Splitting
+### Threats:
+- User experience and design 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Change Log
+- Had to deviate from the original wireframe re parsing data by topic and changed concept to a general forum
+- Within the form table I created a drop down list with the specific topics so each comment will be tagged and can be sorted when the team refactors this project
