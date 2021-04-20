@@ -1,6 +1,6 @@
 # Dev-Training
 
-- This web-app is deployed via [Netlify](https://determined-hopper-0e021f.netlify.app/).
+- This web-app is deployed via [Netlify](https://dev-training.netlify.app/).
 
 ## Project Description
 
