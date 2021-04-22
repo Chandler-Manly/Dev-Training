@@ -12,11 +12,11 @@ The wireframes below illustrate Dev-Training's responsiveness relative to monito
 Iphone X 375x812
 Laptop with HiDPI screen 1440x900
 
-https://drive.google.com/file/d/1s4qeD8BeqHMwORCbboDGVeGUVqqfASwh/view?usp=sharing
+![wireframe](https://res.cloudinary.com/dygk00sc0/image/upload/v1619055905/Dev-training.io_aop40z.png)
 
 ## Component Hierarchy
 
-https://drive.google.com/file/d/1aLEGh4pnBRqWy_yyItkVQcgJbn_2hS4W/view?usp=sharing
+![Component](https://res.cloudinary.com/dygk00sc0/image/upload/v1619055623/Dev-training_components_aquukf.png)
 
 ## API and Data Sample
 
